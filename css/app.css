@@ -1,0 +1,126 @@
+﻿html{
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: dimgray;
+    color: whitesmoke;
+}
+
+div, p{
+    font-size: 16px;
+    line-height: 16px;
+}
+
+footer{
+    width: 100%;
+    border-top: 1px solid whitesmoke;
+    position: absolute;
+    top: 850px;
+    left: 0px;
+    padding-top: 5px;
+}
+
+footer div{
+    padding-left: 50px;
+}
+
+.stage{
+    position: absolute;
+    left: 50px;
+    top: 180px;
+    width: 1000px;
+    height: 650px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    outline: none;
+    background-color: white;
+}
+
+.instructions{
+    position: absolute;
+    top: 180px;
+    left: 1220px;
+    font-weight: bold;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+    width: 320px;
+    height: 650px;
+    padding: 10px;
+}
+
+.instructions div{
+    float: left;
+    margin-top: 10px;
+}
+
+/* ---- Docks ---- */
+.dock{
+    position: absolute;
+    /*border: 1px solid gray;
+    box-sizing: border-box;*/
+}
+
+.top-dock{
+    left: 50px;
+    top: 138px;
+    width: 750px;
+    height: 42px;
+}
+
+.left-dock{
+    left: 8px;
+    top: 180px;
+    width: 42px;
+    height: 650px;
+}
+
+/* ---- Layers ---- */
+.layer-list{
+    position: absolute;
+    top: 180px;
+    left: 1050px;
+    width: 150px;
+    height: 650px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.layer-list-head{
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+}
+
+.layer-list-body{
+    width: 100%;
+    float: left;
+    height: 622px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* ---- Tree item ---- */
+.tree-item{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    float: left;
+}
+
+.tree-item-container{
+    position: relative;
+    width: 100%;
+    float: left;
+    visibility: visible;
+    height: auto;
+}
+
+.tree-item-container-collapsed{
+    height: 0px;
+    visibility: hidden;
+}

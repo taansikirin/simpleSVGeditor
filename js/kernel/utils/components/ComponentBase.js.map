@@ -1,0 +1,1 @@
+{"version":3,"file":"ComponentBase.js","sourceRoot":"","sources":["../../../../ts/kernel/utils/components/ComponentBase.ts"],"names":["ComponentBase","ComponentBase.constructor","ComponentBase.enable","ComponentBase.disable"],"mappings":"AAIA;IAECA;IAAcC,CAACA;IACRD,8BAAMA,GAAbA,cAAqBE,CAACA;IACfF,+BAAOA,GAAdA,cAAsBG,CAACA;IACxBH,oBAACA;AAADA,CAACA,AALD,IAKC"}

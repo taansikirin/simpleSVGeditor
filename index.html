@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>SVG Editor</title>
+    <meta name="description" content="Create, edit and animate SVG online.">
+    <meta name="author" content="Petr Douda">
+    <meta name="keywords" content="SVG, editor, free, opensource, typescript, javascript">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="css/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="css/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="css/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="css/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="css/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="css/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="css/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="css/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="css/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="css/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="css/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/favicons/favicon-16x16.png">
+    <link rel="manifest" href="css/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="css/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <link rel="stylesheet" href="css/editorComponents.css" type="text/css" />
+    <link rel="stylesheet" href="css/popup.css" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Sans&amp;subset=latin-ext" rel="stylesheet" type="text/css">
+    
+    <script src="js/tool_panels/PanelBase.js"></script>
+    <script src="js/tool_panels/DeletePanel.js"></script>
+    <script src="js/tool_panels/DrawPanel.js"></script>
+    <script src="js/tool_panels/EditPanel.js"></script>
+    <script src="js/tool_panels/ElementPropertyPanel.js"></script>
+    <script src="js/tool_panels/MixPanel.js"></script>
+    <script src="js/popups/PopupBase.js"></script>
+    <script src="js/popups/AnimPopup.js"></script>
+    <script src="js/popups/CodePopup.js"></script>
+    <script src="js/kernel/utils/components/ComponentBase.js"></script>
+    <script src="js/kernel/utils/components/Button.js"></script>
+    <script src="js/kernel/utils/components/Combo.js"></script>
+    <script src="js/kernel/utils/components/HorizontalContainer.js"></script>
+    <script src="js/kernel/utils/components/Input.js"></script>
+    <script src="js/kernel/utils/components/Stepper.js"></script>
+    <script src="js/shapes/ElementBase.js"></script>
+    <script src="js/shapes/Polygon.js"></script>
+    <script src="js/shapes/Rectangle.js"></script>
+    <script src="js/shapes/Circle.js"></script>
+    <script src="js/shapes/Polyline.js"></script>
+    <script src="js/kernel/layers/Layer.js"></script>
+    <script src="js/kernel/layers/LayerList.js"></script>
+    <script src="js/kernel/layers/LayerItem.js"></script>
+    <script src="js/kernel/layers/LayerTreeItem.js"></script>
+    <script src="js/kernel/utils/ControlPoint.js"></script>
+    <script src="js/kernel/utils/ControlPointStore.js"></script>
+    <script src="js/kernel/modules/Parser.js"></script>
+    <script src="js/kernel/modules/Animation.js"></script>
+    <script src="js/kernel/SVGEditor.js"></script>
+    <script src="js/kernel/SVGStage.js"></script>
+    <script src="js/kernel/utils/utils.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var svgEditor = new SVGEditor();
+        });
+    </script>
+</head>
+<body>
+    <h1>SVG Editor</h1>
+    <p><b>Under development. Optimized for Google Chrome.</b></p>
+    <div class="instructions">
+        <h3 style="margin-top:0px;margin-bottom:5px;">Instructions</h3>
+        <div>
+            Use double click to:<br>
+             ~ finish new shape<br>
+             ~ start/stop editing shape<br>
+             ~ select 'control points' to remove    
+        </div>
+        <div>
+            Notice:<br>
+            ~ elements with animation are selectable only through layer list on the left
+        </div>
+                
+    </div>
+    <div id="topDock" class="dock top-dock"></div>
+    <div id="leftDock" class="dock left-dock"></div>
+    <div id="stage" class="stage" tabindex="0"></div>
+    <div id="layerList" class="layer-list">
+        <div id="layerListHead" class="layer-list-head"></div>
+        <div id="layerListBody" class="layer-list-body"></div>
+    </div>
+    <footer>
+        <div>Author: Petr Douda</div>
+        <div>Published: 2015</div>
+        <div style="font-weight:bold;">Fork me at <a href="https://github.com/taansikirin/simpleSVGeditor.git" title="GitHub repository" target="_blanc" style="color:greenyellow;">GitHub</a>.</div>
+        <div>If you have any question please feel free to contact me at <a href="mailto:douda.petr@gmail.com" style="color:greenyellow;">douda.petr@gmail.com</a>.</div>
+    </footer>
+</body>
+</html>
