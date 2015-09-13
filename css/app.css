@@ -12,6 +12,10 @@ div, p{
     line-height: 16px;
 }
 
+a{
+    color: greenyellow;
+}
+
 footer{
     width: 100%;
     border-top: 1px solid whitesmoke;
